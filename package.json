@@ -1,0 +1,30 @@
+{
+  "name": "nayubot",
+  "version": "1.0.0",
+  "description": "yet another discord bot focused on productivity.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shiroraven/NayuBot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "productivity",
+    "emotes",
+    "calendar",
+    "cv2"
+  ],
+  "author": "Shiroraven",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shiroraven/NayuBot/issues"
+  },
+  "homepage": "https://github.com/Shiroraven/NayuBot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
