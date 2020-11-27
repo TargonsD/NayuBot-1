@@ -8,7 +8,7 @@ client.commands = new discord.Collection()
 const loadModules = path => {
   let modules = fs.readdirSync(path).filter(file => file.endsWith('module.js'))
   for (const file of modules) {
-    delete require.cache[require.resolve(`${path}/${file}`)]
+    delete require.cache[require.resolve]
     const command = require(`${path}/${file}`)
     client.commands.set(command.name, command)
   }
