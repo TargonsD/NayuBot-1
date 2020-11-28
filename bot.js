@@ -8,7 +8,7 @@ client.commands = new discord.Collection()
 const loadModules = path => {
   let modules = fs.readdirSync(path).filter(file => file.endsWith('module.js'))
   for (const file of modules) {
-    delete require.cache[require.resolve]
+    delete require.cache[require.resolve(`${path}/${file}`)]
     const command = require(`${path}/${file}`)
     client.commands.set(command.name, command)
   }
@@ -17,7 +17,7 @@ const loadModules = path => {
 const parseCommand = (prefix, message) => {
   if (message.content.startsWith(prefix)) {
     let command = message.content.split(' ')[0].substring(1)
-    if (!message.author.bot) {
+    if (!(message.author.bot)) {
       client.commands
         .get(command)
         .execute(message, message.content.split(' ').slice(1), client)
