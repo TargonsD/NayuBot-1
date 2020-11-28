@@ -1,8 +1,8 @@
 module.exports = {
-    name: 'hw2',
+    name: 'hw',
     description: 'Hellow world - basic module',
     execute (message, args, client) {
-      message.reply('Hello World !')
+      message.reply('Hello')
     }
   }
   
