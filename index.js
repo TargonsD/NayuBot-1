@@ -21,4 +21,4 @@ Nayu.on('message', message => {
   }
   Nayu.parseMessage(message)
 })
-Nayu.login('Mzk4MDcwNDIzODEzNzUwNzg0.Wky5-A.Cs7FxHqoeTP6NNR-CrBSMBucEPs')
+Nayu.login('token')
